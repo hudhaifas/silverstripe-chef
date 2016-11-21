@@ -1,0 +1,24 @@
+{
+    "name": "hudhaifas/silverstripe-chef",
+    "description": "Silverstripe Chef module is a complete solution to organize small and medium restaurants.",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/hudhaifas/silverstripe-chef",
+    "keywords": ["silverstripe", "restaurant", "chef", "reservation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hudhaifa Shatnawi",
+            "email": "me@hudhaifa.com"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/hudhaifas/silverstripe-chef/issues"
+    },
+    "require": {
+        "silverstripe/cms": "~3.0",
+        "silverstripe/framework": "~3.0"
+    },
+    "extra": {
+        "installer-name": "chef"
+    }
+}

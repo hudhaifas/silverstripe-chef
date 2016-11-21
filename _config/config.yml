@@ -1,0 +1,26 @@
+---
+Name: restaurant
+---
+
+# Use with silverstripe/fluent 
+#CarouselItem:
+#  extensions:
+#    - FluentExtension
+#GalleryItem:
+#  extensions:
+#    - FluentExtension
+#BookVolume:
+#  extensions:
+#    - FluentExtension
+#BooksCatalog:
+#  extensions:
+#    - FluentExtension
+#BookAuthor:
+#  extensions:
+#    - FluentExtension
+#BookPublisher:
+#  extensions:
+#    - FluentExtension
+#BookFormat:
+#  extensions:
+#    - FluentExtension
