@@ -15,8 +15,9 @@
         "issues": "http://github.com/hudhaifas/silverstripe-chef/issues"
     },
     "require": {
-        "silverstripe/cms": "~3.0",
-        "silverstripe/framework": "~3.0"
+        "silverstripe/cms": "3.4.1",
+        "silverstripe/framework": "3.4.1",
+        "burnbright/silverstripe-hasonefield": "dev-master"
     },
     "extra": {
         "installer-name": "chef"
