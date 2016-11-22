@@ -2,57 +2,145 @@
 ar:
   RestaurantAdmin:
     MENUTITLE: 'المطعم'
+# Admin
   Chef:
-    SINGULARNAME: 'الطهاة'
+    PLURALNAME: 'الطهاة'
+    SINGULARNAME: 'الطاهي'
   Meal:
-    SINGULARNAME: 'الوجبات'
+    PLURALNAME: 'الوجبات'
+    SINGULARNAME: 'الوجبة'
   MealSize:
-    SINGULARNAME: 'أحجام الوجبة'
+    PLURALNAME: 'أحجام الوجبة'
+    SINGULARNAME: 'حجم الوجبة'
   MealsMenu:
-    SINGULARNAME: 'قوائم الوجبات'
+    PLURALNAME: 'قوائم الوجبات'
+    SINGULARNAME: 'قائمة الوجبات'
   Reservation:
-    SINGULARNAME: 'الحجوزات'
+    PLURALNAME: 'الحجوزات'
+    SINGULARNAME: 'الحجز'
   AboutItem:
+    PLURALNAME: 'About Item'
     SINGULARNAME: 'About Item'
   CarouselItem:
-    SINGULARNAME: 'Carousel Items'
+    PLURALNAME: 'Carousel Items'
+    SINGULARNAME: 'Carousel Item'
   GalleryItem:
-    SINGULARNAME: 'Gallery Items'
+    PLURALNAME: 'Gallery Items'
+    SINGULARNAME: 'Gallery Item'
   OpenTime:
-    SINGULARNAME: 'Open Times'
+    PLURALNAME: 'Open Times'
+    SINGULARNAME: 'Open Time'
   Restaurant:
-    MENUS: 'Menus'
+    MENUS: 'القوائم'
     OPEN_TIMES: 'Open Times'
     CONTACT: 'Contact'
     ABOUT: 'About'
     CHEFS: 'Chefs'
     GALLERY_ITEMS: 'Gallery Items'
     CAROUSEL_ITEMS: 'Carousel Items'
+# Model
+  Chef:
+    NAME: 'الاسم'
+    POSITION: 'الوظيفة'
+    PORTFOLIO: 'الملف الشخصي'
+    SOCIAL: 'الشبكات الاجتماعية'
+    FACEBOOK: 'فيسبوك'
+    TWITTER: 'تويتر'
+    GOOGLE_PLUS: 'جوجل بلس'
+    LINKEDIN: 'لينكدإن'
+    PHOTO: 'الصورة'
+    RESTAURANT: 'المطعم'
+  Meal:
+    NAME: 'الاسم'
+    PRICE: 'السعر'
+    ORIGIN: 'الأصل'
+    DESCRIPTION: 'الوصف'
+    PHOTO: 'الصورة'
+    MENUS: 'القوائم'
+    SIZES: 'الأحجام'
+  MealSize:
+    NAME: 'الاسم'
+    PRICE: 'السعر'
+    DESCRIPTION: 'الوصف'
+    PHOTO: 'الصورة'
+    MEAL: 'الوجبة'
+  Reservation:
+    NAME: 'الاسم'
+    EMAIL: 'البريد الالكتروني'
+    PHONE_NUMBER: 'رقم الهاتف'
+    DATE: 'التاريخ'
+    TIME: 'الوقت'
+    NO_OF_PEOPLE: 'عدد الأشخاص'
+    YOUR_MESSAGE: 'رسالتك'
+  AboutItem:
+    ABOUT: 'عنا'
+    IMAGES: 'الصور'
+    IMAGE_1: 'الصورة 1'
+    IMAGE_2: 'الصورة 2'
+    IMAGE_3: 'الصورة 3'
+    RESTAURANT: 'المطعم'
+  CarouselItem:
+    TITLE: 'العنوان'
+    SUBTITLE: 'العنوان الفرعي'
+    DESCRIPTION: 'الوصف'
+    EXTERNAL_LINK: 'رابط خارجي'
+    IMAGE: 'الصورة'
+    RESTAURANT: 'المطعم'
+  GalleryItem:
+    TITLE: 'العنوان'
+    DESCRIPTION: 'الوصف'
+    IMAGE: 'الصورة'
+    RESTAURANT: 'المطعم'
+  OpenTime:
+    TITLE: 'العنوان'
+    TIMES: 'الأوقات'
+    RESTAURANT: 'المطعم'
 # Template
+  RestaurantPage:
     # Home Section
-    HOME: 'Home'
+    HOME: 'الرئيسية'
+    READ_MORE: 'إقرأ المزيد'
+    TOP: 'إلى الأعلى'
     # About Section
-    ABOUT_US: 'About Us'
-    DISCOVER: 'Discover'
-    # Blog Section
-    BLOG: 'Blog'
-    # Contact Section
-    GET_IN_TOUCH: 'Get In Touch'
-    CONTACT_US: 'Contact Us'
-    RESTAURANT_ADDRESS: 'Restaurant Address'
-    OPEN_HOURS: 'Open Hours'
+    ABOUT_US: 'عنا'
+    DISCOVER: 'استكشف'
     # Counter Section
-    MEALS: 'Meals'
-    # Gallery Section
-    GALLERY: 'Gallery'
-    OUR_GALLERY: 'Our Gallery'
+    MEALS: 'الوجبات'
     # Menu Section
-    MENU: 'Menu'
+    MENU: 'القائمة'
     # Reservation Section
-    RESERVATION: 'Reservation'
-    MAKE_A: 'Make A'
-    RESERVATION_MESSAGE: 'Let Us Know When You Are Visiting Us'
+    RESERVATION: 'الحجز'
+    MAKE_A: 'قن بـ'
+    RESERVATION_MESSAGE: 'أخبرنا بتشريفك لمطعمنا'
+    NAME: 'الاسم الكامل'
+    EMAIL: 'البريد الالكتروني'
+    PHONE_NUMBER: 'رقم الهاتف'
+    DATE: 'التاريخ'
+    TIME: 'الوقت'
+    BREAK_FAST: 'الإفطار'
+    LUNCH: 'الغداء'
+    DINNER: 'العشاء'
+    NO_OF_PEOPLE: 'عدد الأشخاص؟'
+    1_PERSON: 'شخص واحد'
+    2_PEOPLE: 'شخصان'
+    3_PEOPLE: '3 أشخاص'
+    4_PEOPLE: '4 أشخاص'
+    MORE_PEOPLE: 'أكثر'
+    YOUR_MESSAGE: 'رسالتك'
+    BOOK_NOW: 'احجز الآن'
+    # Gallery Section
+    GALLERY: 'المعرض'
+    OUR_GALLERY: 'معرضنا'
     # Team Section
-    OUR_TEAM: 'Our Team'
-    OUR_PROFESSIONALS: 'Our Professionals'
-    MASTER_CHEFS: 'Master Chefs'
+    OUR_TEAM: 'فريقنا'
+    OUR_PROFESSIONALS: 'محترفينا'
+    MASTER_CHEFS: 'سادة الطهاة'
+    # Contact Section
+    GET_IN_TOUCH: 'تواصل معنا'
+    CONTACT_US: 'راسلنا'
+    RESTAURANT_ADDRESS: 'عنوان المطعم'
+    OPEN_HOURS: 'ساعات العمل'
+    SUBJECT: 'العنوان'
+    SEND_MESSAGE: 'أرسل'
+    # Blog Section
+    BLOG: 'المدونة'
