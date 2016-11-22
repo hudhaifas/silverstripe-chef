@@ -31,6 +31,7 @@ ar:
     PLURALNAME: 'Open Times'
     SINGULARNAME: 'Open Time'
   Restaurant:
+    CHEFS: 'الطهاة'
     MENUS: 'القوائم'
     OPEN_TIMES: 'Open Times'
     CONTACT: 'Contact'
