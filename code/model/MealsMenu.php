@@ -65,7 +65,7 @@ class MealsMenu
         $labels['Meals'] = _t('MealsMenu.MEALS', 'Meals');
         $labels['Restaurant'] = _t('MealsMenu.RESTAURANT', 'Restaurant');
 
-        $labels['Title'] = _t('MealsMenu.NAME', 'Title');
+        $labels['Title'] = _t('MealsMenu.NAME', 'Name');
         $labels['Meals.Count'] = _t('MealsMenu.NUMBER_OF_MEALS', 'Number Of Meals');
 
         return $labels;

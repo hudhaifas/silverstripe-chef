@@ -1,45 +1,16 @@
 # Portuguese Language
 pt:
-  RestaurantAdmin:
+  ChefAdmin:
     MENUTITLE: 'Restaurant'
-# Admin
-  Chef:
-    PLURALNAME: 'Chefs'
-    SINGULARNAME: 'Chef'
-  Meal:
-    PLURALNAME: 'Meals'
-    SINGULARNAME: 'Meal'
-  MealSize:
-    PLURALNAME: 'Meal Sizes'
-    SINGULARNAME: 'Meal Size'
+# Model
   MealsMenu:
     PLURALNAME: 'Meals Menus'
-    SINGULARNAME: 'Meals Menu'
-  Reservation:
-    PLURALNAME: 'Reservations'
-    SINGULARNAME: 'Reservation'
-  AboutItem:
-    PLURALNAME: 'About Item'
-    SINGULARNAME: 'About Item'
-  CarouselItem:
-    PLURALNAME: 'Carousel Items'
-    SINGULARNAME: 'Carousel Item'
-  GalleryItem:
-    PLURALNAME: 'Gallery Items'
-    SINGULARNAME: 'Gallery Item'
-  OpenTime:
-    PLURALNAME: 'Open Times'
-    SINGULARNAME: 'Open Time'
-  Restaurant:
-    MENUS: 'Menus'
-    OPEN_TIMES: 'Open Times'
-    CONTACT: 'Contact'
-    ABOUT: 'About'
-    CHEFS: 'Chefs'
-    GALLERY_ITEMS: 'Gallery Items'
-    CAROUSEL_ITEMS: 'Carousel Items'
-# Model
+    SINGULARNAME: 'Meals Menus'
+    NAME: 'Name'
+    NUMBER_OF_MEALS: 'Number Of Meals'
   Chef:
+    PLURALNAME: 'Chefs'
+    SINGULARNAME: 'Chefs'
     NAME: 'Name'
     POSITION: 'Position'
     PORTFOLIO: 'Portfolio'
@@ -51,6 +22,8 @@ pt:
     PHOTO: 'Photo'
     RESTAURANT: 'Restaurant'
   Meal:
+    PLURALNAME: 'Meals'
+    SINGULARNAME: 'Meals'
     NAME': 'Name'
     PRICE: 'Price'
     ORIGIN: 'Origin'
@@ -59,12 +32,16 @@ pt:
     MENUS: 'Menus'
     SIZES: 'Sizes'
   MealSize:
+    PLURALNAME: 'Meal Sizes'
+    SINGULARNAME: 'Meal Sizes'
     NAME: 'Name'
     PRICE: 'Price'
     DESCRIPTION: 'Description'
     PHOTO: 'Photo'
     MEAL: 'Meal'
   Reservation:
+    PLURALNAME: 'Reservations'
+    SINGULARNAME: 'Reservations'
     NAME: 'Name'
     EMAIL: 'Email'
     PHONE_NUMBER: 'Phone Number'
@@ -73,6 +50,8 @@ pt:
     NO_OF_PEOPLE: 'No. of People'
     YOUR_MESSAGE: 'Your Message'
   AboutItem:
+    PLURALNAME: 'About Item'
+    SINGULARNAME: 'About Item'
     ABOUT: 'About'
     IMAGES: 'Images'
     IMAGE_1: 'Image 1'
@@ -80,6 +59,8 @@ pt:
     IMAGE_3: 'Image 3'
     RESTAURANT: 'Restaurant'
   CarouselItem:
+    PLURALNAME: 'Carousel Items'
+    SINGULARNAME: 'Carousel Items'
     TITLE: 'Title'
     SUBTITLE: 'Subtitle'
     DESCRIPTION: 'Description'
@@ -87,14 +68,34 @@ pt:
     IMAGE: 'Image'
     RESTAURANT: 'Restaurant'
   GalleryItem:
+    PLURALNAME: 'Gallery Items'
+    SINGULARNAME: 'Gallery Items'
     TITLE: 'Title'
     DESCRIPTION: 'Description'
     IMAGE: 'Image'
     RESTAURANT: 'Restaurant'
   OpenTime:
+    PLURALNAME: 'Open Times'
+    SINGULARNAME: 'Open Times'
     TITLE: 'Title'
     TIMES: 'Times'
     RESTAURANT: 'Restaurant'
+  ContactMessage:
+    PLURALNAME: 'Contact Messages'
+    SINGULARNAME: 'Contact Message'   
+    NAME: 'Name'
+    EMAIL: 'Email'
+    SUBJECT: 'Subject'
+    MESSAGE: 'Message'
+    TIME: 'Time'
+  Restaurant:
+    MENUS: 'Menus'
+    OPEN_TIMES: 'Open Times'
+    CONTACT: 'Contact'
+    ABOUT: 'About'
+    CHEFS: 'Chefs'
+    GALLERY_ITEMS: 'Gallery Items'
+    CAROUSEL_ITEMS: 'Carousel Items'
 # Template
   RestaurantPage:
     # Home Section

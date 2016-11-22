@@ -1,46 +1,16 @@
 # Arabic Language
 ar:
-  RestaurantAdmin:
+  ChefAdmin:
     MENUTITLE: 'المطعم'
-# Admin
-  Chef:
-    PLURALNAME: 'الطهاة'
-    SINGULARNAME: 'الطاهي'
-  Meal:
-    PLURALNAME: 'الوجبات'
-    SINGULARNAME: 'الوجبة'
-  MealSize:
-    PLURALNAME: 'أحجام الوجبة'
-    SINGULARNAME: 'حجم الوجبة'
+# Model
   MealsMenu:
     PLURALNAME: 'قوائم الوجبات'
-    SINGULARNAME: 'قائمة الوجبات'
-  Reservation:
-    PLURALNAME: 'الحجوزات'
-    SINGULARNAME: 'الحجز'
-  AboutItem:
-    PLURALNAME: 'About Item'
-    SINGULARNAME: 'About Item'
-  CarouselItem:
-    PLURALNAME: 'Carousel Items'
-    SINGULARNAME: 'Carousel Item'
-  GalleryItem:
-    PLURALNAME: 'Gallery Items'
-    SINGULARNAME: 'Gallery Item'
-  OpenTime:
-    PLURALNAME: 'Open Times'
-    SINGULARNAME: 'Open Time'
-  Restaurant:
-    CHEFS: 'الطهاة'
-    MENUS: 'القوائم'
-    OPEN_TIMES: 'Open Times'
-    CONTACT: 'Contact'
-    ABOUT: 'About'
-    CHEFS: 'Chefs'
-    GALLERY_ITEMS: 'Gallery Items'
-    CAROUSEL_ITEMS: 'Carousel Items'
-# Model
+    SINGULARNAME: 'قوائم الوجبات'
+    NAME: 'الاسم'
+    NUMBER_OF_MEALS: 'عدد الوجبات'
   Chef:
+    PLURALNAME: 'الطهاة'
+    SINGULARNAME: 'الطهاة'
     NAME: 'الاسم'
     POSITION: 'الوظيفة'
     PORTFOLIO: 'الملف الشخصي'
@@ -52,6 +22,8 @@ ar:
     PHOTO: 'الصورة'
     RESTAURANT: 'المطعم'
   Meal:
+    PLURALNAME: 'الوجبات'
+    SINGULARNAME: 'الوجبات'
     NAME: 'الاسم'
     PRICE: 'السعر'
     ORIGIN: 'الأصل'
@@ -60,12 +32,16 @@ ar:
     MENUS: 'القوائم'
     SIZES: 'الأحجام'
   MealSize:
+    PLURALNAME: 'أحجام الوجبة'
+    SINGULARNAME: 'أحجام الوجبة'
     NAME: 'الاسم'
     PRICE: 'السعر'
     DESCRIPTION: 'الوصف'
     PHOTO: 'الصورة'
     MEAL: 'الوجبة'
   Reservation:
+    PLURALNAME: 'الحجوزات'
+    SINGULARNAME: 'الحجوزات'
     NAME: 'الاسم'
     EMAIL: 'البريد الالكتروني'
     PHONE_NUMBER: 'رقم الهاتف'
@@ -74,6 +50,8 @@ ar:
     NO_OF_PEOPLE: 'عدد الأشخاص'
     YOUR_MESSAGE: 'رسالتك'
   AboutItem:
+    PLURALNAME: 'About Item'
+    SINGULARNAME: 'About Item'
     ABOUT: 'عنا'
     IMAGES: 'الصور'
     IMAGE_1: 'الصورة 1'
@@ -81,6 +59,8 @@ ar:
     IMAGE_3: 'الصورة 3'
     RESTAURANT: 'المطعم'
   CarouselItem:
+    PLURALNAME: 'Carousel Items'
+    SINGULARNAME: 'Carousel Item'
     TITLE: 'العنوان'
     SUBTITLE: 'العنوان الفرعي'
     DESCRIPTION: 'الوصف'
@@ -88,14 +68,35 @@ ar:
     IMAGE: 'الصورة'
     RESTAURANT: 'المطعم'
   GalleryItem:
+    PLURALNAME: 'Gallery Items'
+    SINGULARNAME: 'Gallery Item'
     TITLE: 'العنوان'
     DESCRIPTION: 'الوصف'
     IMAGE: 'الصورة'
     RESTAURANT: 'المطعم'
   OpenTime:
+    PLURALNAME: 'أوقات العمل'
+    SINGULARNAME: 'أوقات العمل'
     TITLE: 'العنوان'
     TIMES: 'الأوقات'
     RESTAURANT: 'المطعم'
+  ContactMessage:
+    PLURALNAME: 'الرسائل'
+    SINGULARNAME: 'الرسائل'   
+    NAME: 'الاسم'
+    EMAIL: 'البريد الالكتروني'
+    SUBJECT: 'العنوان'
+    MESSAGE: 'الرسالة'
+    TIME: 'الوقت'
+  Restaurant:
+    CHEFS: 'الطهاة'
+    MENUS: 'القوائم'
+    OPEN_TIMES: 'Open Times'
+    CONTACT: 'Contact'
+    ABOUT: 'About'
+    CHEFS: 'Chefs'
+    GALLERY_ITEMS: 'Gallery Items'
+    CAROUSEL_ITEMS: 'Carousel Items'
 # Template
   RestaurantPage:
     # Home Section

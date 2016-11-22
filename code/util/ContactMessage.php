@@ -75,11 +75,11 @@ class ContactMessage
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Name'] = _t('Restaurant.NAME', 'Name');
-        $labels['Email'] = _t('Restaurant.EMAIL', 'Email');
-        $labels['Subject'] = _t('Restaurant.SUBJECT', 'Subject');
-        $labels['Message'] = _t('Restaurant.MESSAGE', 'Message');
-        $labels['Created.Nice'] = _t('Restaurant.TIME', 'Time');
+        $labels['Name'] = _t('ContactMessage.NAME', 'Name');
+        $labels['Email'] = _t('ContactMessage.EMAIL', 'Email');
+        $labels['Subject'] = _t('ContactMessage.SUBJECT', 'Subject');
+        $labels['Message'] = _t('ContactMessage.MESSAGE', 'Message');
+        $labels['Created.Nice'] = _t('ContactMessage.TIME', 'Time');
 
         return $labels;
     }

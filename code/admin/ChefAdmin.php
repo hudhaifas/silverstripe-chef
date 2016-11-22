@@ -33,8 +33,8 @@ class ChefAdmin
         extends ModelAdmin {
 
     private static $managed_models = array(
-        'Meal',
         'MealsMenu',
+        'Meal',
         'Chef',
         'Reservation',
         'ContactMessage',
