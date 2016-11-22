@@ -69,9 +69,12 @@ class GalleryItem
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Image.StripThumbnail'] = _t('Restaurant.PHOTO', 'Photo');
-        $labels['Title'] = _t('Chef.TITLE', 'Title');
-        $labels['Description'] = _t('Chef.DESCRIPTION', 'Description');
+        $labels['Title'] = _t('GalleryItem.TITLE', 'Title');
+        $labels['Description'] = _t('GalleryItem.DESCRIPTION', 'Description');
+
+        $labels['Image.StripThumbnail'] = _t('GalleryItem.IMAGE', 'Image');
+        $labels['Image'] = _t('GalleryItem.IMAGE', 'Image');
+        $labels['Restaurant'] = _t('GalleryItem.RESTAURANT', 'Restaurant');
 
         return $labels;
     }

@@ -59,7 +59,12 @@ class AboutItem
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['About'] = _t('Chef.ABOUT', 'About');
+        $labels['About'] = _t('AboutItem.ABOUT', 'About');
+        $labels['Images'] = _t('AboutItem.IMAGES', 'Images');
+        $labels['Image1'] = _t('AboutItem.IMAGE_1', 'Image 1');
+        $labels['Image2'] = _t('AboutItem.IMAGE_2', 'Image 2');
+        $labels['Image3'] = _t('AboutItem.IMAGE_3', 'Image 3');
+        $labels['Restaurant'] = _t('AboutItem.RESTAURANT', 'Restaurant');
 
         return $labels;
     }
@@ -93,6 +98,7 @@ class AboutItem
                 $fields->removeFieldFromTab('Root.Main', 'Image3');
                 $fields->addFieldToTab('Root.Images', $field);
             }
+
         });
 
         $fields = parent::getCMSFields();

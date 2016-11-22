@@ -66,7 +66,14 @@ class RestaurantPage
         $labels['Address'] = _t('Restaurant.ADDRESS', 'Address');
         $labels['Phone'] = _t('Restaurant.PHONE', 'Phone');
         $labels['Email'] = _t('Restaurant.EMAIL', 'Email');
+        
+        $labels['Menus'] = _t('Restaurant.MENUS', 'Menus');
+        $labels['OpenTimes'] = _t('Restaurant.OPEN_TIMES', 'Open Times');
+        $labels['Contact'] = _t('Restaurant.CONTACT', 'Contact');
         $labels['About'] = _t('Restaurant.ABOUT', 'About');
+        $labels['Chefs'] = _t('Restaurant.CHEFS', 'Chefs');
+        $labels['GalleryItems'] = _t('Restaurant.GALLERY_ITEMS', 'Gallery Items');
+        $labels['CarouselItems'] = _t('Restaurant.CAROUSEL_ITEMS', 'Carousel Items');
 
         return $labels;
     }

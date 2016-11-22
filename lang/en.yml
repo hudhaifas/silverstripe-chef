@@ -1,4 +1,146 @@
+# English Language
 en:
   RestaurantAdmin:
     MENUTITLE: 'Restaurant'
-    
+# Admin
+  Chef:
+    PLURALNAME: 'Chefs'
+    SINGULARNAME: 'Chef'
+  Meal:
+    PLURALNAME: 'Meals'
+    SINGULARNAME: 'Meal'
+  MealSize:
+    PLURALNAME: 'Meal Sizes'
+    SINGULARNAME: 'Meal Size'
+  MealsMenu:
+    PLURALNAME: 'Meals Menus'
+    SINGULARNAME: 'Meals Menu'
+  Reservation:
+    PLURALNAME: 'Reservations'
+    SINGULARNAME: 'Reservation'
+  AboutItem:
+    PLURALNAME: 'About Item'
+    SINGULARNAME: 'About Item'
+  CarouselItem:
+    PLURALNAME: 'Carousel Items'
+    SINGULARNAME: 'Carousel Item'
+  GalleryItem:
+    PLURALNAME: 'Gallery Items'
+    SINGULARNAME: 'Gallery Item'
+  OpenTime:
+    PLURALNAME: 'Open Times'
+    SINGULARNAME: 'Open Time'
+  Restaurant:
+    MENUS: 'Menus'
+    OPEN_TIMES: 'Open Times'
+    CONTACT: 'Contact'
+    ABOUT: 'About'
+    CHEFS: 'Chefs'
+    GALLERY_ITEMS: 'Gallery Items'
+    CAROUSEL_ITEMS: 'Carousel Items'
+# Model
+  Chef:
+    NAME: 'Name'
+    POSITION: 'Position'
+    PORTFOLIO: 'Portfolio'
+    SOCIAL: 'Social'
+    FACEBOOK: 'Facebook'
+    TWITTER: 'Twitter'
+    GOOGLE_PLUS: 'Google Plus'
+    LINKEDIN: 'LinkedIn'
+    PHOTO: 'Photo'
+    RESTAURANT: 'Restaurant'
+  Meal:
+    NAME': 'Name'
+    PRICE: 'Price'
+    ORIGIN: 'Origin'
+    DESCRIPTION: 'Description'
+    PHOTO: 'Photo'
+    MENUS: 'Menus'
+    SIZES: 'Sizes'
+  MealSize:
+    NAME: 'Name'
+    PRICE: 'Price'
+    DESCRIPTION: 'Description'
+    PHOTO: 'Photo'
+    MEAL: 'Meal'
+  Reservation:
+    NAME: 'Name'
+    EMAIL: 'Email'
+    PHONE_NUMBER: 'Phone Number'
+    DATE: 'Date'
+    TIME: 'Time'
+    NO_OF_PEOPLE: 'No. of People'
+    YOUR_MESSAGE: 'Your Message'
+  AboutItem:
+    ABOUT: 'About'
+    IMAGES: 'Images'
+    IMAGE_1: 'Image 1'
+    IMAGE_2: 'Image 2'
+    IMAGE_3: 'Image 3'
+    RESTAURANT: 'Restaurant'
+  CarouselItem:
+    TITLE: 'Title'
+    SUBTITLE: 'Subtitle'
+    DESCRIPTION: 'Description'
+    EXTERNAL_LINK: 'ExternalLink'
+    IMAGE: 'Image'
+    RESTAURANT: 'Restaurant'
+  GalleryItem:
+    TITLE: 'Title'
+    DESCRIPTION: 'Description'
+    IMAGE: 'Image'
+    RESTAURANT: 'Restaurant'
+  OpenTime:
+    TITLE: 'Title'
+    TIMES: 'Times'
+    RESTAURANT: 'Restaurant'
+# Template
+  RestaurantPage:
+    # Home Section
+    HOME: 'Home'
+    READ_MORE: 'READ MORE'
+    TOP: 'Top'
+    # About Section
+    ABOUT_US: 'About Us'
+    DISCOVER: 'Discover'
+    # Counter Section
+    MEALS: 'Meals'
+    # Menu Section
+    MENU: 'Menu'
+    # Reservation Section
+    RESERVATION: 'Reservation'
+    MAKE_A: 'Make A'
+    RESERVATION_MESSAGE: 'Let Us Know When You Are Visiting Us'
+    NAME: 'Full Name'
+    EMAIL: 'Email'
+    PHONE_NUMBER: 'Phone Number'
+    DATE: 'Date'
+    TIME: 'Time'
+    BREAK_FAST: 'Break Fast'
+    LUNCH: 'Lunch'
+    DINNER: 'Dinner'
+    NO_OF_PEOPLE: 'No. of People?'
+    1_PERSON: '1 Person'
+    2_PEOPLE: '2 People'
+    3_PEOPLE: '3 People'
+    4_PEOPLE: '4 People'
+    MORE_PEOPLE: 'More'
+    YOUR_MESSAGE: 'Your Message'
+    BOOK_NOW: 'Book Now'
+    # Gallery Section
+    GALLERY: 'Gallery'
+    OUR_GALLERY: 'Our Gallery'
+    # Team Section
+    OUR_TEAM: 'Our Team'
+    OUR_PROFESSIONALS: 'Our Professionals'
+    MASTER_CHEFS: 'Master Chefs'
+    # Contact Section
+    GET_IN_TOUCH: 'Get In Touch'
+    CONTACT_US: 'Contact Us'
+    RESTAURANT_ADDRESS: 'Restaurant Address'
+    OPEN_HOURS: 'Open Hours'
+    SUBJECT: 'Subject'
+    SEND_MESSAGE: 'Send Message'
+    # Blog Section
+    BLOG: 'Blog'

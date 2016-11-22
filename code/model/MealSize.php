@@ -69,11 +69,13 @@ class MealSize
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Photo.StripThumbnail'] = _t('Restaurant.PHOTO', 'Photo');
-        $labels['Name'] = _t('Restaurant.NAME', 'Name');
-        $labels['Price'] = _t('Restaurant.PRICE', 'Price');
-        $labels['Origin'] = _t('Restaurant.ORIGIN', 'Origin');
-        $labels['Description'] = _t('Restaurant.DESCRIPTION', 'Description');
+        $labels['Size'] = _t('MealSize.NAME', 'Name');
+        $labels['Price'] = _t('MealSize.PRICE', 'Price');
+        $labels['Description'] = _t('MealSize.DESCRIPTION', 'Description');
+
+        $labels['Photo.StripThumbnail'] = _t('MealSize.PHOTO', 'Photo');
+        $labels['Photo'] = _t('MealSize.PHOTO', 'Photo');
+        $labels['Meal'] = _t('MealSize.MEAL', 'Meal');
 
         return $labels;
     }

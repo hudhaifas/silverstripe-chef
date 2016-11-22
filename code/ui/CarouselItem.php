@@ -36,7 +36,7 @@ class CarouselItem
         'Title' => 'Varchar(255)',
         'Subtitle' => 'Varchar(255)',
         'Description' => 'Text',
-        'URLLink' => 'Varchar(255)',
+        'ExternalLink' => 'Varchar(255)',
     );
     private static $translate = array(
         'Title',
@@ -73,9 +73,14 @@ class CarouselItem
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Image.StripThumbnail'] = _t('Restaurant.PHOTO', 'Photo');
-        $labels['Title'] = _t('Chef.TITLE', 'Title');
-        $labels['Description'] = _t('Chef.DESCRIPTION', 'Description');
+        $labels['Image.StripThumbnail'] = _t('CarouselItem.IMAGE', 'Image');
+        $labels['Image'] = _t('CarouselItem.IMAGE', 'Image');
+        
+        $labels['Title'] = _t('CarouselItem.TITLE', 'Title');
+        $labels['Subtitle'] = _t('CarouselItem.SUBTITLE', 'Subtitle');
+        $labels['Description'] = _t('CarouselItem.DESCRIPTION', 'Description');
+        $labels['ExternalLink'] = _t('CarouselItem.EXTERNAL_LINK', 'ExternalLink');
+        $labels['Restaurant'] = _t('CarouselItem.RESTAURANT', 'Restaurant');
 
         return $labels;
     }
@@ -95,7 +100,7 @@ class CarouselItem
             $this->reorderField($fields, 'Title', 'Root.Main', 'Root.Main');
             $this->reorderField($fields, 'Subtitle', 'Root.Main', 'Root.Main');
             $this->reorderField($fields, 'Description', 'Root.Main', 'Root.Main');
-            $this->reorderField($fields, 'URLLink', 'Root.Main', 'Root.Main');
+            $this->reorderField($fields, 'ExternalLink', 'Root.Main', 'Root.Main');
 
             $this->reorderField($fields, 'RestaurantID', 'Root.Main', 'Root.Main');
         });

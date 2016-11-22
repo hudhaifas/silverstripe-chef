@@ -1,4 +1,59 @@
 # Portuguese Language
-pt:
+en:
   RestaurantAdmin:
-    MENUTITLE: 'Restaurante'
+    MENUTITLE: 'Restaurant'
+# Admin
+  Chef:
+    SINGULARNAME: 'Chefs'
+  Meal:
+    SINGULARNAME: 'Meals'
+  MealSize:
+    SINGULARNAME: 'Meal Sizes'
+  MealsMenu:
+    SINGULARNAME: 'Meals Menus'
+  Reservation:
+    SINGULARNAME: 'Reservations'
+  AboutItem:
+    SINGULARNAME: 'About Item'
+  CarouselItem:
+    SINGULARNAME: 'Carousel Items'
+  GalleryItem:
+    SINGULARNAME: 'Gallery Items'
+  OpenTime:
+    SINGULARNAME: 'Open Times'
+  Restaurant:
+    MENUS: 'Menus'
+    OPEN_TIMES: 'Open Times'
+    CONTACT: 'Contact'
+    ABOUT: 'About'
+    CHEFS: 'Chefs'
+    GALLERY_ITEMS: 'Gallery Items'
+    CAROUSEL_ITEMS: 'Carousel Items'
+# Template
+    # Home Section
+    HOME: 'Home'
+    # About Section
+    ABOUT_US: 'About Us'
+    DISCOVER: 'Discover'
+    # Blog Section
+    BLOG: 'Blog'
+    # Contact Section
+    GET_IN_TOUCH: 'Get In Touch'
+    CONTACT_US: 'Contact Us'
+    RESTAURANT_ADDRESS: 'Restaurant Address'
+    OPEN_HOURS: 'Open Hours'
+    # Counter Section
+    MEALS: 'Meals'
+    # Gallery Section
+    GALLERY: 'Gallery'
+    OUR_GALLERY: 'Our Gallery'
+    # Menu Section
+    MENU: 'Menu'
+    # Reservation Section
+    RESERVATION: 'Reservation'
+    MAKE_A: 'Make A'
+    RESERVATION_MESSAGE: 'Let Us Know When You Are Visiting Us'
+    # Team Section
+    OUR_TEAM: 'Our Team'
+    OUR_PROFESSIONALS: 'Our Professionals'
+    MASTER_CHEFS: 'Master Chefs'

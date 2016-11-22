@@ -61,21 +61,21 @@ class MealsMenu
 
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
-        $labels['Title'] = _t('Chef.NAME', 'Title');
-        $labels['Meals.Count'] = _t('Chef.NUMBER_OF_MEALS', 'Number Of Meals');
+
+        $labels['Meals'] = _t('MealsMenu.MEALS', 'Meals');
+        $labels['Restaurant'] = _t('MealsMenu.RESTAURANT', 'Restaurant');
+
+        $labels['Title'] = _t('MealsMenu.NAME', 'Title');
+        $labels['Meals.Count'] = _t('MealsMenu.NUMBER_OF_MEALS', 'Number Of Meals');
 
         return $labels;
-    }
-
-    function Link($action = null) {
-        return parent::Link("reservation/$this->ID");
     }
 
     public function getRandomMeals() {
         $meals = array();
 
-        foreach ($this->Meals()->sort('RAND()') as $book) {
-            $meals[] = $volume;
+        foreach ($this->Meals()->sort('RAND()') as $meal) {
+            $meals[] = $meal;
         }
 
         return new ArrayList($meals);

@@ -75,13 +75,14 @@ class Reservation
 
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
-        $labels['Name'] = _t('Restaurant.NAME', 'Name');
-        $labels['Email'] = _t('Restaurant.EMAIL', 'Email');
-        $labels['PhoneNo'] = _t('Restaurant.PHONE_NUMBER', 'Phone Number');
-        $labels['Date'] = _t('Restaurant.DATE', 'Date');
-        $labels['Time'] = _t('Restaurant.TIME', 'Time');
-        $labels['People'] = _t('Restaurant.NO_OF_PEOPLE', 'No. of People');
-        $labels['Message'] = _t('Restaurant.YOUR_MESSAGE', 'Your Message');
+        
+        $labels['Name'] = _t('Reservation.NAME', 'Name');
+        $labels['Email'] = _t('Reservation.EMAIL', 'Email');
+        $labels['PhoneNo'] = _t('Reservation.PHONE_NUMBER', 'Phone Number');
+        $labels['Date'] = _t('Reservation.DATE', 'Date');
+        $labels['Time'] = _t('Reservation.TIME', 'Time');
+        $labels['People'] = _t('Reservation.NO_OF_PEOPLE', 'No. of People');
+        $labels['Message'] = _t('Reservation.YOUR_MESSAGE', 'Your Message');
 
         return $labels;
     }

@@ -73,14 +73,20 @@ class Chef
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Photo.StripThumbnail'] = _t('Restaurant.PHOTO', 'Photo');
         $labels['Name'] = _t('Chef.NAME', 'Name');
         $labels['Position'] = _t('Chef.POSITION', 'Position');
+        $labels['Portfolio'] = _t('Chef.PORTFOLIO', 'Portfolio');
+
+        $labels['Social'] = _t('Chef.SOCIAL', 'Social');
         $labels['Facebook'] = _t('Chef.FACEBOOK', 'Facebook');
         $labels['Twitter'] = _t('Chef.TWITTER', 'Twitter');
         $labels['GooglePlus'] = _t('Chef.GOOGLE_PLUS', 'Google Plus');
         $labels['LinkedIn'] = _t('Chef.LINKEDIN', 'LinkedIn');
 
+        $labels['Photo.StripThumbnail'] = _t('Chef.PHOTO', 'Photo');
+        $labels['Photo'] = _t('Chef.PHOTO', 'Photo');
+        $labels['Restaurant'] = _t('Chef.RESTAURANT', 'Restaurant');
+        
         return $labels;
     }
 
@@ -90,8 +96,6 @@ class Chef
         $this->beforeUpdateCMSFields(function ($fields) use ($self) {
             $this->reorderField($fields, 'Name', 'Root.Main', 'Root.Main');
             $this->reorderField($fields, 'Position', 'Root.Main', 'Root.Main');
-            $this->reorderField($fields, 'Portfolio', 'Root.Main', 'Root.Main');
-
             if ($field = $fields->fieldByName('Root.Main.Photo')) {
                 $field->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
                 $field->setFolderName("chef");
@@ -99,7 +103,9 @@ class Chef
                 $fields->removeFieldFromTab('Root.Main', 'Photo');
                 $fields->addFieldToTab('Root.Main', $field);
             }
-            
+
+            $this->reorderField($fields, 'Portfolio', 'Root.Main', 'Root.Main');
+
             $this->reorderField($fields, 'RestaurantID', 'Root.Main', 'Root.Main');
 
             // Social

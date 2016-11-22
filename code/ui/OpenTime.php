@@ -59,9 +59,11 @@ class OpenTime
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Title'] = _t('Chef.TITLE', 'Title');
-        $labels['Times'] = _t('Chef.TIMES', 'Times');
+        $labels['Title'] = _t('OpenTime.TITLE', 'Title');
+        $labels['Times'] = _t('OpenTime.TIMES', 'Times');
 
+        $labels['Restaurant'] = _t('OpenTime.RESTAURANT', 'Restaurant');
+        
         return $labels;
     }
 

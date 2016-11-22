@@ -77,12 +77,16 @@ class Meal
     public function fieldLabels($includerelations = true) {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Photo.StripThumbnail'] = _t('Restaurant.PHOTO', 'Photo');
-        $labels['Name'] = _t('Restaurant.NAME', 'Name');
-        $labels['Price'] = _t('Restaurant.PRICE', 'Price');
-        $labels['Origin'] = _t('Restaurant.ORIGIN', 'Origin');
-        $labels['Description'] = _t('Restaurant.DESCRIPTION', 'Description');
+        $labels['Name'] = _t('Meal.NAME', 'Name');
+        $labels['Price'] = _t('Meal.PRICE', 'Price');
+        $labels['Origin'] = _t('Meal.ORIGIN', 'Origin');
+        $labels['Description'] = _t('Meal.DESCRIPTION', 'Description');
 
+        $labels['Photo.StripThumbnail'] = _t('Meal.PHOTO', 'Photo');
+        $labels['Photo'] = _t('Meal.PHOTO', 'Photo');
+        $labels['Menus'] = _t('Meal.MENUS', 'Menus');
+        $labels['Sizes'] = _t('Meal.SIZES', 'Sizes');
+        
         return $labels;
     }
 
@@ -95,13 +99,13 @@ class Meal
             $this->reorderField($fields, 'Origin', 'Root.Main', 'Root.Main');
             $this->reorderField($fields, 'Description', 'Root.Main', 'Root.Main');
 
-            $categoryField = TagField::create(
-                            'Menus', _t('Librarian.CATEGORIES', 'Menus'), MealsMenu::get(), $self->Menus()
+            $menusField = TagField::create(
+                            'Menus', 'Menus', MealsMenu::get(), $self->Menus()
             );
 
             $fields->removeFieldFromTab('Root', 'Menus');
 
-            $fields->addFieldToTab('Root.Main', $categoryField);
+            $fields->addFieldToTab('Root.Main', $menusField);
 
             if ($field = $fields->fieldByName('Root.Main.Photo')) {
                 $field->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
